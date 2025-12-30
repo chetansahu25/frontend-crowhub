@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --absolute-white: #FFF;
+  --white-shades-50: #808080;
+  --grey-12: #1F1F1F;
+  --grey-40: #666;
+  --grey-10: #1A1A1A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #06000E;
+  color: white;
+  overflow-x: hidden;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(90deg, #C28CFF 34.62%, #4845FE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-purple-reverse {
+  background: linear-gradient(270deg, #4845FE 0%, #C18CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-white {
+  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.70) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-badge {
+  background: linear-gradient(90deg, #E59CFF 0.01%, #BA9CFF 50.01%, #9CB2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-cta {
+  background: linear-gradient(180deg, #B483FE 0%, #705CFE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  backdrop-filter: blur(3px);
+}
+
+.glass-card {
+  background: radial-gradient(132% 57.89% at 65.79% -35%, rgba(120, 123, 255, 0.06) 0%, rgba(120, 123, 255, 0.00) 100%),
+              linear-gradient(180deg, rgba(255, 255, 255, 0.00) 54.17%, rgba(255, 255, 255, 0.04) 100%),
+              rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(6px);
+}
+
+.glow-dot {
+  filter: drop-shadow(0 0 10.9px #B766FF);
+}
+
+.glow-dot-purple {
+  filter: drop-shadow(0 0 15.7px #5C34C3);
+}
